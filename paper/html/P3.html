@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<html xml:lang="zh-CN" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>3</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+  <body>
+    <table border="0" height="1262.84" width="892.92">
+      <tr>
+        <td>
+          <div style="position:absolute;top:99.1155;left:75;font-size:0px">
+            <img height="159" src="image/2.jpg" width="357"/>
+          </div>
+          <div style="position:absolute;top:129.231;left:92.2034;font-size:0px">
+            <span style="font-size:13.3336;color:000000">新闻报道</span>
+          </div>
+          <div style="position:absolute;top:129.231;left:213.236;font-size:0px">
+            <span style="font-size:13.3336;color:0b0b0b">事件提取算法</span>
+          </div>
+          <div style="position:absolute;top:213.123;left:226.57;font-size:0px">
+            <span style="font-size:13.3336;color:0b0b0b">开放数据</span>
+          </div>
+          <div style="position:absolute;top:230.899;left:226.57;font-size:0px">
+            <span style="font-size:13.3336;color:0b0b0b">人工标注</span>
+          </div>
+          <div style="position:absolute;top:129.231;left:360.935;font-size:0px">
+            <span style="font-size:13.3336;color:000000">计算结果</span>
+          </div>
+          <div style="position:absolute;top:222.011;left:360.935;font-size:0px">
+            <span style="font-size:13.3336;color:000000">标注结果</span>
+          </div>
+          <div style="position:absolute;top:166.296;left:358.802;font-size:0px">
+            <span style="font-size:13.3336;color:0b0b0b">评估</span>
+          </div>
+          <div style="position:absolute;top:183.633;left:358.802;font-size:0px">
+            <span style="font-size:13.3336;color:0b0b0b">检验</span>
+          </div>
+          <div style="position:absolute;top:82.7562;left:308.641;font-size:0px">
+            <span style="font-size:13.3336;color:0b0b0b">修正</span>
+          </div>
+          <div style="position:absolute;top:269.481;left:168.96;font-size:0px">
+            <span style="font-size:13.449;color:000000">图</span>
+          </div>
+          <div style="position:absolute;top:269.481;left:185.775;font-size:0px">
+            <span style="font-size:13.449;color:000000">1:</span>
+          </div>
+          <div style="position:absolute;top:269.481;left:200.4;font-size:0px">
+            <span style="font-size:13.449;color:000000">事件提取的总体架构图</span>
+          </div>
+          <div style="position:absolute;top:332.084;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">集了相关信息，中国各省市GDP数据、日期与节日对</span>
+          </div>
+          <div style="position:absolute;top:351.808;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">应表等，之后把这些数据与已有数据源融合，为完善</span>
+          </div>
+          <div style="position:absolute;top:371.533;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">数据特征做好了准备工作。</span>
+          </div>
+          <div style="position:absolute;top:392.006;left:103.665;font-size:0px">
+            <span style="font-size:14.9445;color:000000">(3)事件类型标签修正</span>
+          </div>
+          <div style="position:absolute;top:410.983;left:103.665;font-size:0px">
+            <span style="font-size:15.6915;color:000000">新闻和微博数据集中，每一条新闻纪录已通过标</span>
+          </div>
+          <div style="position:absolute;top:430.709;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">签对每一条新闻进行了标注，共3类：公交车爆炸事件、</span>
+          </div>
+          <div style="position:absolute;top:450.448;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">暴恐事件、校园砍伤事件。然而经过对数据进行采样</span>
+          </div>
+          <div style="position:absolute;top:470.173;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">分析，我们发现有许多错标、漏标的情况，甚至有很多</span>
+          </div>
+          <div style="position:absolute;top:489.899;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">与公共事件无关的新闻也误被标注为三类事件之一，</span>
+          </div>
+          <div style="position:absolute;top:509.623;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">标注准确率很低，对我们后续的事件提取工作造成了</span>
+          </div>
+          <div style="position:absolute;top:529.348;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">很大的干扰。为了更准确地进行事件提取，我们对每</span>
+          </div>
+          <div style="position:absolute;top:549.073;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">一条新闻重新进行了事件类型标注。首先针对三个系</span>
+          </div>
+          <div style="position:absolute;top:568.798;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">列事件，人工建立含有少量相关词汇的语义库，之后</span>
+          </div>
+          <div style="position:absolute;top:588.523;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">采用相邻相关词语扩充算法，对每一类事件已有的语</span>
+          </div>
+          <div style="position:absolute;top:608.248;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">义库进行扩充。当针对每一系列公共事件建立好相应</span>
+          </div>
+          <div style="position:absolute;top:627.973;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">的语义库之后，对每一条新闻的标题进行分词，与所</span>
+          </div>
+          <div style="position:absolute;top:647.698;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">建立的词库进行词语匹配，计算匹配度，新闻与哪一</span>
+          </div>
+          <div style="position:absolute;top:667.423;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">类事件的匹配度最高，则把这一条新闻标注为哪一类</span>
+          </div>
+          <div style="position:absolute;top:687.148;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">事件，如果某一条新闻与三类事件的匹配度都很低(低</span>
+          </div>
+          <div style="position:absolute;top:706.888;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">于设定阈值)，则定义这条新闻定义为无关数据(杂质</span>
+          </div>
+          <div style="position:absolute;top:726.613;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">数据)。经抽样统计，修正后的数据事件类型标签准确</span>
+          </div>
+          <div style="position:absolute;top:746.338;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">度达95%以上。</span>
+          </div>
+          <div style="position:absolute;top:778.741;left:72.285;font-size:0px">
+            <span style="font-size:16.4385;color:000000">3</span>
+          </div>
+          <div style="position:absolute;top:777.247;left:96.945;font-size:0px">
+            <span style="font-size:17.9325;color:000000">事件提取</span>
+          </div>
+          <div style="position:absolute;top:809.815;left:72.285;font-size:0px">
+            <span style="font-size:14.9445;color:000000">3.1</span>
+          </div>
+          <div style="position:absolute;top:809.068;left:105.9;font-size:0px">
+            <span style="font-size:15.6915;color:000000">整体思想</span>
+          </div>
+          <div style="position:absolute;top:833.279;left:103.665;font-size:0px">
+            <span style="font-size:15.6915;color:000000">经过数据去重、信息完整化、事件类型标签修正</span>
+          </div>
+          <div style="position:absolute;top:853.004;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">的预处理之后，与公共事件无关的杂志数据已被过滤</span>
+          </div>
+          <div style="position:absolute;top:872.728;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">掉，得到公交车爆炸、暴恐、校园砍杀三个系列事件</span>
+          </div>
+          <div style="position:absolute;top:892.453;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">的所有新闻。我们的事件提取工作正是基于针对这三</span>
+          </div>
+          <div style="position:absolute;top:912.178;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">个系列事件的所有新闻，分为三个系列分别进行处理，</span>
+          </div>
+          <div style="position:absolute;top:931.903;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">三个系列事件的处理流程相同。</span>
+          </div>
+          <div style="position:absolute;top:951.643;left:103.665;font-size:0px">
+            <span style="font-size:15.6915;color:000000">事件提取工作分为两部分，采用TF-IDF相似度匹</span>
+          </div>
+          <div style="position:absolute;top:971.368;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">配算法进行事件提取；采用开放数据微信平台，以众</span>
+          </div>
+          <div style="position:absolute;top:991.093;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">包的方法对事件进行人工标注，对TF-IDF相似度匹配</span>
+          </div>
+          <div style="position:absolute;top:1010.82;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">算法的计算结果进行评估与检验，进而对算法进行修</span>
+          </div>
+          <div style="position:absolute;top:1030.54;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">正。整体架构如图??所示。</span>
+          </div>
+          <div style="position:absolute;top:1059.99;left:72.285;font-size:0px">
+            <span style="font-size:14.9445;color:000000">3.2 TF-IDF相似度匹配算法</span>
+          </div>
+          <div style="position:absolute;top:1084.2;left:72.285;font-size:0px">
+            <span style="font-size:14.9445;color:000000">3.2.1</span>
+          </div>
+          <div style="position:absolute;top:1083.45;left:117.12;font-size:0px">
+            <span style="font-size:15.6915;color:000000">概述与准备工作</span>
+          </div>
+          <div style="position:absolute;top:1114.15;left:103.665;font-size:0px">
+            <span style="font-size:15.6915;color:000000">一起公共事件会有许多相关媒体报导，包括新闻</span>
+          </div>
+          <div style="position:absolute;top:1133.88;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">报导以及微博报导。即使是针对同一个事件的报导，</span>
+          </div>
+          <div style="position:absolute;top:1153.6;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">也会有很大的差别，包括时间上的差别与内容上的差</span>
+          </div>
+          <div style="position:absolute;top:84.2985;left:461.34;font-size:0px">
+            <span style="font-size:15.6915;color:000000">别。比如针对同一事件的不同报导在时间上可能相隔</span>
+          </div>
+          <div style="position:absolute;top:104.023;left:461.34;font-size:0px">
+            <span style="font-size:15.6915;color:000000">数周，不同媒体对同一事件报导风格相差迥异。如何</span>
+          </div>
+          <div style="position:absolute;top:123.748;left:461.34;font-size:0px">
+            <span style="font-size:15.6915;color:000000">在这些海量的报导中识别出哪些属于对相同事件的报</span>
+          </div>
+          <div style="position:absolute;top:143.474;left:461.34;font-size:0px">
+            <span style="font-size:15.6915;color:000000">导，进而把事件提取出来具有很大挑战。TF-IDF相似</span>
+          </div>
+          <div style="position:absolute;top:163.199;left:461.34;font-size:0px">
+            <span style="font-size:15.6915;color:000000">度匹配算法通过设定时间阈值，定义并计算新闻间的</span>
+          </div>
+          <div style="position:absolute;top:182.923;left:461.34;font-size:0px">
+            <span style="font-size:15.6915;color:000000">相似度，根据相似度对不同的新闻分为不同的簇，每</span>
+          </div>
+          <div style="position:absolute;top:202.648;left:461.34;font-size:0px">
+            <span style="font-size:15.6915;color:000000">一簇中的所有新闻认为是对同一事件的报导，进而实</span>
+          </div>
+          <div style="position:absolute;top:222.373;left:461.34;font-size:0px">
+            <span style="font-size:15.6915;color:000000">现事件提取。</span>
+          </div>
+          <div style="position:absolute;top:242.099;left:492.72;font-size:0px">
+            <span style="font-size:15.6915;color:000000">算法的输入为每一条新闻的主键、报导时间(精确</span>
+          </div>
+          <div style="position:absolute;top:261.823;left:461.34;font-size:0px">
+            <span style="font-size:15.6915;color:000000">到天)、标题、正文内容、新闻所属事件类别，输出为</span>
+          </div>
+          <div style="position:absolute;top:281.548;left:461.34;font-size:0px">
+            <span style="font-size:15.6915;color:000000">每一条新闻对应的事件主键，其中事件主键自动生成。</span>
+          </div>
+          <div style="position:absolute;top:301.274;left:461.34;font-size:0px">
+            <span style="font-size:15.6915;color:000000">在使用TF-IDF相似度匹配算法进行事件提取之前，我</span>
+          </div>
+          <div style="position:absolute;top:320.999;left:461.34;font-size:0px">
+            <span style="font-size:15.6915;color:000000">们做如下准备工作：报导事件类型分系列处理、时间</span>
+          </div>
+          <div style="position:absolute;top:340.738;left:461.34;font-size:0px">
+            <span style="font-size:15.6915;color:000000">地点人物信息提取、同系列事件时间排序。</span>
+          </div>
+          <div style="position:absolute;top:361.21;left:492.72;font-size:0px">
+            <span style="font-size:14.9445;color:000000">(1)</span>
+          </div>
+          <div style="position:absolute;top:360.463;left:513.885;font-size:0px">
+            <span style="font-size:15.6915;color:000000">报导事件类型分系列处理</span>
+          </div>
+          <div style="position:absolute;top:380.188;left:492.72;font-size:0px">
+            <span style="font-size:15.6915;color:000000">数据预处理中我们把属于同一系列事件的新闻打</span>
+          </div>
+          <div style="position:absolute;top:399.914;left:461.34;font-size:0px">
+            <span style="font-size:15.6915;color:000000">好标签(公交车爆炸事件、暴恐事件、校园砍杀事件)，</span>
+          </div>
+          <div style="position:absolute;top:419.639;left:461.34;font-size:0px">
+            <span style="font-size:15.6915;color:000000">且具有很高的准确度。同一系列事件的媒体报导具有</span>
+          </div>
+          <div style="position:absolute;top:439.363;left:461.34;font-size:0px">
+            <span style="font-size:15.6915;color:000000">很高的相似性，因此我们把所有媒体报导按照系列类</span>
+          </div>
+          <div style="position:absolute;top:459.088;left:461.34;font-size:0px">
+            <span style="font-size:15.6915;color:000000">别分类(公交车爆炸、暴恐、校园砍杀)，对每一类分别</span>
+          </div>
+          <div style="position:absolute;top:478.813;left:461.34;font-size:0px">
+            <span style="font-size:15.6915;color:000000">进行事件提取，这会对分类准确度有很大的提高。</span>
+          </div>
+          <div style="position:absolute;top:499.285;left:492.72;font-size:0px">
+            <span style="font-size:14.9445;color:000000">(2)时间地点人物信息提取</span>
+          </div>
+          <div style="position:absolute;top:518.264;left:492.72;font-size:0px">
+            <span style="font-size:15.6915;color:000000">为了精确地对一条媒体报导进行描述，我们首先</span>
+          </div>
+          <div style="position:absolute;top:537.988;left:461.34;font-size:0px">
+            <span style="font-size:15.6915;color:000000">做假设1：假设1</span>
+          </div>
+          <div style="position:absolute;top:537.988;left:572.625;font-size:0px">
+            <span style="font-size:15.6915;color:000000">某事件可以由时间、地点、人物三个</span>
+          </div>
+          <div style="position:absolute;top:557.713;left:461.34;font-size:0px">
+            <span style="font-size:15.6915;color:000000">要素唯一确定。</span>
+          </div>
+          <div style="position:absolute;top:577.438;left:492.72;font-size:0px">
+            <span style="font-size:15.6915;color:000000">基于假设1，我们对每一条媒体新闻所描述事件的</span>
+          </div>
+          <div style="position:absolute;top:597.178;left:461.34;font-size:0px">
+            <span style="font-size:15.6915;color:000000">时间、地点、人物进行提取。我们对每一条媒体报道</span>
+          </div>
+          <div style="position:absolute;top:616.904;left:461.34;font-size:0px">
+            <span style="font-size:15.6915;color:000000">的标题、内容通过基于词典与基于规则相结合的方法</span>
+          </div>
+          <div style="position:absolute;top:636.629;left:461.34;font-size:0px">
+            <span style="font-size:15.6915;color:000000">进行分词。并对其中的地点词语、任务词语自动识别，</span>
+          </div>
+          <div style="position:absolute;top:656.353;left:461.34;font-size:0px">
+            <span style="font-size:15.6915;color:000000">进行提取，作为这一媒体报导的地点、人物特征。</span>
+          </div>
+          <div style="position:absolute;top:676.825;left:492.72;font-size:0px">
+            <span style="font-size:14.9445;color:000000">(3)同系列事件时间排序</span>
+          </div>
+          <div style="position:absolute;top:695.803;left:492.72;font-size:0px">
+            <span style="font-size:15.6915;color:000000">提取过程中我们发现，绝大多数的新闻中对事件</span>
+          </div>
+          <div style="position:absolute;top:715.528;left:461.34;font-size:0px">
+            <span style="font-size:15.6915;color:000000">的报道的描述很模糊(例如“昨日下午”、“傍晚”等很</span>
+          </div>
+          <div style="position:absolute;top:735.253;left:461.34;font-size:0px">
+            <span style="font-size:15.6915;color:000000">不精确的时间描述)，而根本无法从新闻的描述中得出</span>
+          </div>
+          <div style="position:absolute;top:754.978;left:461.34;font-size:0px">
+            <span style="font-size:15.6915;color:000000">具体的事件发生时间，我们有的只有这一条媒体的报</span>
+          </div>
+          <div style="position:absolute;top:774.703;left:461.34;font-size:0px">
+            <span style="font-size:15.6915;color:000000">导时间。我们做出假设2：</span>
+          </div>
+          <div style="position:absolute;top:794.428;left:492.72;font-size:0px">
+            <span style="font-size:15.6915;color:000000">假设2</span>
+          </div>
+          <div style="position:absolute;top:794.428;left:536.055;font-size:0px">
+            <span style="font-size:15.6915;color:000000">事件发生时间与第一条新闻发表时间相隔</span>
+          </div>
+          <div style="position:absolute;top:814.154;left:461.34;font-size:0px">
+            <span style="font-size:15.6915;color:000000">很近，即为时间发生时间就是第一条新闻的报导时间。</span>
+          </div>
+          <div style="position:absolute;top:833.879;left:492.72;font-size:0px">
+            <span style="font-size:15.6915;color:000000">根据假设2，我们对每一个系列事件中的所有媒体</span>
+          </div>
+          <div style="position:absolute;top:853.618;left:461.34;font-size:0px">
+            <span style="font-size:15.6915;color:000000">报导按照时间从前到后的顺序进行排序。这样在把媒</span>
+          </div>
+          <div style="position:absolute;top:873.344;left:461.34;font-size:0px">
+            <span style="font-size:15.6915;color:000000">体报导分为n个事件后，每个事件最早的一个新闻报导</span>
+          </div>
+          <div style="position:absolute;top:893.069;left:461.34;font-size:0px">
+            <span style="font-size:15.6915;color:000000">即为事件发生的时间。</span>
+          </div>
+          <div style="position:absolute;top:945.071;left:461.34;font-size:0px">
+            <span style="font-size:14.9445;color:000000">3.2.2 TF-IDF计算</span>
+          </div>
+          <div style="position:absolute;top:976.063;left:492.72;font-size:0px">
+            <span style="font-size:15.6915;color:000000">在准备工作中，我们针对每一个媒体报道提出了</span>
+          </div>
+          <div style="position:absolute;top:995.788;left:461.34;font-size:0px">
+            <span style="font-size:15.6915;color:000000">一个人名地名词库。我们对每个系列的媒体报道中，结</span>
+          </div>
+          <div style="position:absolute;top:1015.51;left:461.34;font-size:0px">
+            <span style="font-size:15.6915;color:000000">合每一条媒体报导的词库，整合成一个所有人名、地</span>
+          </div>
+          <div style="position:absolute;top:1035.24;left:461.34;font-size:0px">
+            <span style="font-size:15.6915;color:000000">名词库。把每一条新闻用一个向量表示，向量的维度</span>
+          </div>
+          <div style="position:absolute;top:1054.96;left:461.34;font-size:0px">
+            <span style="font-size:15.6915;color:000000">即为同系列事件中所有媒体报导的词语。之后，每一</span>
+          </div>
+          <div style="position:absolute;top:1074.69;left:461.34;font-size:0px">
+            <span style="font-size:15.6915;color:000000">条媒体报导的向量计算每个词语的TF-IDF值，这是对</span>
+          </div>
+          <div style="position:absolute;top:1094.43;left:461.34;font-size:0px">
+            <span style="font-size:15.6915;color:000000">每条媒体报导特征的数值化表示。计算方法如下:</span>
+          </div>
+          <div style="position:absolute;top:1114.9;left:492.72;font-size:0px">
+            <span style="font-size:14.9445;color:000000">(1)</span>
+          </div>
+          <div style="position:absolute;top:1114.15;left:513.885;font-size:0px">
+            <span style="font-size:15.6915;color:000000">计算词频</span>
+          </div>
+          <div style="position:absolute;top:1133.88;left:492.72;font-size:0px">
+            <span style="font-size:15.6915;color:000000">词频(Term Frequency，TF)指的是某一个给定的词</span>
+          </div>
+          <div style="position:absolute;top:1153.6;left:461.34;font-size:0px">
+            <span style="font-size:15.6915;color:000000">语ti在该文件中出现的频率。对于在某一特定文件里</span>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+
+</html>

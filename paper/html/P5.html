@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<html xml:lang="zh-CN" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>5</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+</head>
+  <body>
+    <table border="0" height="1262.84" width="892.92">
+      <tr>
+        <td>
+          <div style="position:absolute;top:85.485;left:460.5;font-size:0px">
+            <img height="541.5" src="image/14.jpg" width="361.5"/>
+          </div>
+          <div style="position:absolute;top:682.29;left:460.5;font-size:0px">
+            <img height="361.5" src="image/15.jpg" width="361.5"/>
+          </div>
+          <div style="position:absolute;top:84.2985;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">闻媒体、社交网络的数据中进行了事件提取。在这些</span>
+          </div>
+          <div style="position:absolute;top:104.023;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">提取出的危害公共安全事件中，我们尝试发现事件间</span>
+          </div>
+          <div style="position:absolute;top:123.749;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">的关联规律。比如，同系列事件中，事件之间在时间、</span>
+          </div>
+          <div style="position:absolute;top:143.474;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">空间的传播会有一定规律；而不同系列事件之间的发</span>
+          </div>
+          <div style="position:absolute;top:163.199;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">生则会有一些共性规律，这些规律对于我们进一步了</span>
+          </div>
+          <div style="position:absolute;top:182.923;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">解危害公共安全事件发生规律、对危害公共安全事件</span>
+          </div>
+          <div style="position:absolute;top:202.649;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">进行预测具有巨大的意义。</span>
+          </div>
+          <div style="position:absolute;top:222.374;left:103.665;font-size:0px">
+            <span style="font-size:15.6915;color:000000">在本节中，我们首先从时间、空间、语义三个方</span>
+          </div>
+          <div style="position:absolute;top:242.099;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">面进行事件的特征提取；然后通过数据可视化的方法</span>
+          </div>
+          <div style="position:absolute;top:261.823;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">对同系列事件间触发关系、不同系列事件间共性规律</span>
+          </div>
+          <div style="position:absolute;top:281.548;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">进行定性发现[? ?</span>
+          </div>
+          <div style="position:absolute;top:282.295;left:196.755;font-size:0px">
+            <span style="font-size:14.9445;color:000000">]，提出一些假设猜想；最后通过相</span>
+          </div>
+          <div style="position:absolute;top:301.274;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">关性度量最大信息量相关系数(MIC)，对事件之间的关</span>
+          </div>
+          <div style="position:absolute;top:320.999;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">联度进行定量分析，做出总结。</span>
+          </div>
+          <div style="position:absolute;top:363.026;left:72.285;font-size:0px">
+            <span style="font-size:14.9445;color:000000">4.1.1</span>
+          </div>
+          <div style="position:absolute;top:362.279;left:117.12;font-size:0px">
+            <span style="font-size:15.6915;color:000000">特征提取</span>
+          </div>
+          <div style="position:absolute;top:392.099;left:103.665;font-size:0px">
+            <span style="font-size:15.6915;color:000000">危害公共安全事件的特征涵盖时间、空间、新闻</span>
+          </div>
+          <div style="position:absolute;top:411.823;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">媒体、社交网络等多维度，如事件发生的时间、事件</span>
+          </div>
+          <div style="position:absolute;top:431.548;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">发生的地点、事件发生的媒体报道情况。为了更详细</span>
+          </div>
+          <div style="position:absolute;top:451.274;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">地表征每一个事件，我们从时间、空间、语义三个方</span>
+          </div>
+          <div style="position:absolute;top:470.999;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">面对事件进行了特征提取，共提取近40个特征。具体</span>
+          </div>
+          <div style="position:absolute;top:490.724;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">特征条目如附录一所示。</span>
+          </div>
+          <div style="position:absolute;top:532.75;left:72.285;font-size:0px">
+            <span style="font-size:14.9445;color:000000">4.1.2</span>
+          </div>
+          <div style="position:absolute;top:532.004;left:117.12;font-size:0px">
+            <span style="font-size:15.6915;color:000000">同系列事件触发关系分析</span>
+          </div>
+          <div style="position:absolute;top:561.808;left:103.665;font-size:0px">
+            <span style="font-size:15.6915;color:000000">表征一个事件有很多特征，比如事件发生的时间、</span>
+          </div>
+          <div style="position:absolute;top:581.548;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">事件发生的地点、事件发生的媒体报道情况。为了更</span>
+          </div>
+          <div style="position:absolute;top:601.274;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">详细地表征一个事件，我们从时间、空间、语义三个</span>
+          </div>
+          <div style="position:absolute;top:620.998;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">方面进行特征提取，共提取近40个特征。</span>
+          </div>
+          <div style="position:absolute;top:641.471;left:103.665;font-size:0px">
+            <span style="font-size:14.9445;color:000000">(1)时间触发关系研究</span>
+          </div>
+          <div style="position:absolute;top:660.448;left:103.665;font-size:0px">
+            <span style="font-size:15.6915;color:000000">同系列事件在时间上存在一定的触发关系。在一</span>
+          </div>
+          <div style="position:absolute;top:680.173;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">定时间范围内，一起系列危害公共安全事件的发生很</span>
+          </div>
+          <div style="position:absolute;top:699.898;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">可能会对另一起事情的发生产生触发作用。我们使用</span>
+          </div>
+          <div style="position:absolute;top:719.623;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">最大信息量相关系数(MIC)对公交车爆炸事件、暴力恐</span>
+          </div>
+          <div style="position:absolute;top:739.348;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">怖事件、校园砍杀事件3类事件进行了时间维度相关性</span>
+          </div>
+          <div style="position:absolute;top:759.073;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">分析，结果如图??所示。</span>
+          </div>
+          <div style="position:absolute;top:778.799;left:103.665;font-size:0px">
+            <span style="font-size:15.6915;color:000000">从图??中我们可以看出：每起公交车爆炸事件时</span>
+          </div>
+          <div style="position:absolute;top:798.523;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">间分布特征和15天前的分布特征相似，每起暴力恐怖</span>
+          </div>
+          <div style="position:absolute;top:818.249;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">事件时间分布特征和5天前的分布特征相似；每起校园</span>
+          </div>
+          <div style="position:absolute;top:837.988;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">砍杀事件时间分布特征与4天前至18天前的事件分布</span>
+          </div>
+          <div style="position:absolute;top:857.713;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">特征均有一定的相似度。此外我们发现，三种系列事</span>
+          </div>
+          <div style="position:absolute;top:877.438;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">件在以月为时间粒度的规律分布上并无相关性可循。</span>
+          </div>
+          <div style="position:absolute;top:897.164;left:103.665;font-size:0px">
+            <span style="font-size:15.6915;color:000000">每起公交车爆炸事件时间分布特征和15天前的分</span>
+          </div>
+          <div style="position:absolute;top:916.889;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">布特征相似，每起暴力恐怖事件时间分布特征和5天</span>
+          </div>
+          <div style="position:absolute;top:936.613;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">前的分布特征相似；每起校园砍杀事件时间分布特征</span>
+          </div>
+          <div style="position:absolute;top:956.338;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">与4天前至18天前的事件分布特征均有一定的相似度。</span>
+          </div>
+          <div style="position:absolute;top:976.063;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">此外我们发现，三种系列事件在以月为时间粒度的规</span>
+          </div>
+          <div style="position:absolute;top:995.788;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">律分布上并无相关性可循。</span>
+          </div>
+          <div style="position:absolute;top:1016.26;left:103.665;font-size:0px">
+            <span style="font-size:14.9445;color:000000">(2)空间触发关系研究</span>
+          </div>
+          <div style="position:absolute;top:1035.24;left:103.665;font-size:0px">
+            <span style="font-size:15.6915;color:000000">我们对3类事件在空间触发关系进行分析。首先我</span>
+          </div>
+          <div style="position:absolute;top:1054.96;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">们以省级单位为空间划分单位对各个省危害公共安全</span>
+          </div>
+          <div style="position:absolute;top:1074.69;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">事件发生频次做相关性分析，但并没有发现明显的相</span>
+          </div>
+          <div style="position:absolute;top:1094.43;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">关性特征。然而当我们将地理分区作为空间划分单位，</span>
+          </div>
+          <div style="position:absolute;top:1114.15;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">每个地理分区包依照空间位置含若干个省，对各个地</span>
+          </div>
+          <div style="position:absolute;top:1133.88;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">区事件发生频次做相关性分析，发现各地区事件发生</span>
+          </div>
+          <div style="position:absolute;top:1153.6;left:72.285;font-size:0px">
+            <span style="font-size:15.6915;color:000000">频次之间具有较为明显的相关性特征。如图??∼??所</span>
+          </div>
+          <div style="position:absolute;top:144.105;left:709.087;font-size:0px">
+            <span style="font-size:10.6445;color:000000">95%置信水平</span>
+          </div>
+          <div style="position:absolute;top:115.276;left:566.005;font-size:0px">
+            <span style="font-size:10.6445;color:000000">事件复发显著间隔</span>
+          </div>
+          <div style="position:absolute;top:636.096;left:544.56;font-size:0px">
+            <span style="font-size:13.449;color:000000">图</span>
+          </div>
+          <div style="position:absolute;top:636.096;left:561.375;font-size:0px">
+            <span style="font-size:13.449;color:000000">4:</span>
+          </div>
+          <div style="position:absolute;top:636.096;left:576.015;font-size:0px">
+            <span style="font-size:13.449;color:000000">同系列事件时间相关性分析</span>
+          </div>
+          <div style="position:absolute;top:1052.9;left:531.12;font-size:0px">
+            <span style="font-size:13.449;color:000000">图</span>
+          </div>
+          <div style="position:absolute;top:1052.9;left:547.92;font-size:0px">
+            <span style="font-size:13.449;color:000000">5:</span>
+          </div>
+          <div style="position:absolute;top:1052.9;left:562.56;font-size:0px">
+            <span style="font-size:13.449;color:000000">公共交通事件空间传播变化规律</span>
+          </div>
+          <div style="position:absolute;top:1114.15;left:461.34;font-size:0px">
+            <span style="font-size:15.6915;color:000000">示。</span>
+          </div>
+          <div style="position:absolute;top:1133.88;left:492.72;font-size:0px">
+            <span style="font-size:15.6915;color:000000">我们以校园砍杀事件为例进行分析，校园砍杀事</span>
+          </div>
+          <div style="position:absolute;top:1153.6;left:461.34;font-size:0px">
+            <span style="font-size:15.6915;color:000000">件中，东北区、西北地区、港澳台地区和其他地区的相</span>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+
+</html>
